@@ -7,6 +7,11 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 
 
+gulp.task('watch',function(){
+    gulp.watch('./src/css/**/*.css', ['css']);
+});
+
+
 gulp.task('css', () =>
 gulp.src('./src/css/**/*.css')
     .pipe(autoprefixer({
