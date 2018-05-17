@@ -7,6 +7,8 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 
 
+gulp.task('default',['css','img','js','watch']);
+
 gulp.task('watch',function(){
     gulp.watch('./src/css/**/*.css', ['css']);
 });
